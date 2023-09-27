@@ -39,7 +39,7 @@ jobs:
       run: |
         curl -L https://github.com/golang-migrate/migrate/releases/download/v4.16.2/migrate.linux-amd64.tar.gz | tar xvz
         ls ${{ github.workspace }}
-        sudo mv migrate /bin/sh
+        sudo mv migrate /bin/sh/migrate
         which migrate
 
     - name: Run migrations
